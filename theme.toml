@@ -3,7 +3,7 @@
 
 name = "Hugo Bear Cub"
 license = "MIT"
-licenselink = "https://github.com/clente/hugo-bearcub/blob/main/LICENSE"
+licenselink = "https://github.com/clente/hugo-bearcub/blob/master/LICENSE"
 description = "A Hugo theme based on »Hugo Bear Blog«. Free, extra-light, super-fast blogging."
 homepage = "https://github.com/clente/hugo-bearcub"
 tags = ["blog", "responsive", "minimal", "seo", "clean", "simple", "light", "minimalist", "mobile", "fast", "reading"]
