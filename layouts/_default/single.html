@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ if eq .Type "blog" }}{{ if not .Params.menu }}
+{{ if not .Params.menu }}
 <h1>{{ .Title }}</h1>
 <p>
   <i>
@@ -8,13 +8,13 @@
     </time>
   </i>
 </p>
-{{ end }}{{ end }}
+{{ end }}
 <content>
   {{ .Content }}
 </content>
 <p>
   {{ range (.GetTerms "tags") }}
-  <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+    <a class="blog-tags" href="{{ .Permalink }}">#{{ .LinkTitle }}</a>&nbsp;&nbsp;
   {{ end }}
 </p>
 {{ end }}

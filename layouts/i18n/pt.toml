@@ -1,0 +1,26 @@
+[home]
+  other = '/'
+
+[posts]
+  other = '/posts'
+
+[other-lang]
+  other = "English 🇺🇸"
+
+[other-home]
+  other = "/en"
+
+[reply]
+  other = 'Resposta a '
+
+[filter]
+  other = 'Filtrando para'
+
+[remove]
+  other = 'Remover filtro'
+
+[stone]
+  other = 'Feito de pedra'
+
+[stone-link]
+  other = '/posts/sites-de-pedra'

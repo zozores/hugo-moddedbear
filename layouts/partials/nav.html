@@ -1,7 +1,15 @@
-<a href="{{ "/" | relURL }}">Home</a>
-{{ range .Site.Menus.main }}
-<a href="{{ .URL }}">{{ .Name }}</a>
-{{ end }}
-{{ with .Site.GetPage "/blog" }}
-<a href="{{ "/blog" | relURL }}">Blog</a>
+<a href={{ i18n "home" | relURL }}>Home</a>
+<a href={{ i18n "posts" }}>Blog</a>
+<a href="mailto:c@lente.dev?subject={{ i18n "reply" }}'{{ .Page.Title | default .Site.Title }}'">Email</a>
+<a href="/index.xml">RSS</a>
+
+{{ $pageLang := .Page.Lang }}
+{{ if .IsTranslated }}
+  {{ range .Translations }}
+    {{ if ne $pageLang .Lang }}
+      <a href="{{ .Permalink }}">{{ i18n "other-lang" }}</a>
+    {{ end }}
+  {{ end }}
+{{ else }}
+  <a class="disabled" href="">{{ i18n "other-lang" }}</a>
 {{ end }}

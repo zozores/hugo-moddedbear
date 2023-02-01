@@ -1,0 +1,26 @@
+[home]
+  other = '/en'
+
+[posts]
+  other = '/en/posts'
+
+[other-lang]
+  other = "Português 🇧🇷"
+
+[other-home]
+  other = "/"
+
+[reply]
+  other = 'Reply to '
+
+[filter]
+  other = 'Filtering for'
+
+[remove]
+  other = 'Remove filter'
+
+[stone]
+  other = 'Made of stone'
+
+[stone-link]
+  other = '/en/posts/stone-websites'
