@@ -28,16 +28,16 @@ DefaultContentLanguage = "en"
     contentDir = "content"
     weight = 1
     [languages.en.params]
-      home = '/'
-      madeWith = '[Feito de pedra](/posts/sites-de-pedra)' # You can use markdown here if you want to link somewhere
+      # You can use markdown here if you want to link somewhere
+      madeWith = '[Feito de pedra](/posts/sites-de-pedra)'
   [languages.pt]
     title = "Site Exemplo"
     languageName = "Português 🇧🇷"
     contentDir = "content.pt"
     weight = 2
     [languages.pt.params]
-      home = '/pt'
-      madeWith = '[Feito de pedra](/posts/sites-de-pedra)' # You can use markdown here if you want to link somewhere
+      # You can use markdown here if you want to link somewhere
+      madeWith = '[Feito de pedra](/posts/sites-de-pedra)'
 
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.
