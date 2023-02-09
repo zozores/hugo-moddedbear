@@ -3,50 +3,98 @@
 baseURL = "https://example.com"
 
 # The name of this wonderful theme ;-).
-theme = 'hugo-bearblog'
+theme = "hugo-bearcub"
 
 # Basic metadata configuration for your blog.
-title = "Hugo ʕ•ᴥ•ʔ Bear Blog"
-author = "Jane Doe"
-copyright = "Copyright © 2020, Jane Doe."
-languageCode = "en-US"
+author = "Caio Lente"
+copyright = "Caio Lente (CC BY-SA 4.0)"
+DefaultContentLanguage = "en"
 
-# Generate a nice robots.txt for SEO
-enableRobotsTXT = true
+# highlighting without inline styles
+[markup]
+  [markup.highlight]
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = false
 
-# Generate "Bearblog"-like URLs !only!, see https://bearblog.dev/.
-disableKinds = ["taxonomy"]
-ignoreErrors = ["error-disable-taxonomy"]
-[permalinks]
-  blog = "/:slug/"
-  tags = "/blog/:slug"
+# Multi-lingual mode config
+# There are different options to translate files
+# See https://gohugo.io/content-management/multilingual/#translation-by-filename
+# And https://gohugo.io/content-management/multilingual/#translation-by-content-directory
+[languages]
+  [languages.en]
+    title = "Example Site"
+    languageName = "English 🇺🇸"
+    contentDir = "content"
+    weight = 1
+    [languages.en.params]
+      home = '/'
+      madeWith = '[Feito de pedra](/posts/sites-de-pedra)' # You can use markdown here if you want to link somewhere
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        name = 'Home'
+        url = '/'
+        weight = 1
+      [[languages.en.menu.main]]
+        name = 'Blog'
+        url = '/blog'
+        weight = 2
+      [[languages.en.menu.main]]
+        name = 'Email'
+        url = '/ERRORERRORERROR'
+        weight = 3
+      [[languages.en.menu.main]]
+        name = 'RSS'
+        url = '/index.xml'
+        weight = 4
+  [languages.pt]
+    title = "Site Exemplo"
+    languageName = "Português 🇧🇷"
+    contentDir = "content.pt"
+    weight = 2
+    [languages.pt.params]
+      home = '/pt'
+      madeWith = '[Feito de pedra](/posts/sites-de-pedra)' # You can use markdown here if you want to link somewhere
+    [languages.pt.menu]
+      [[languages.pt.menu.main]]
+        name = 'Home'
+        url = '/pt'
+        weight = 1
+      [[languages.pt.menu.main]]
+        name = 'Blog'
+        url = '/pt/blog'
+        weight = 2
+      [[languages.pt.menu.main]]
+        name = 'Email'
+        url = '/pt/ERRORERRORERROR'
+        weight = 3
+      [[languages.pt.menu.main]]
+        name = 'RSS'
+        url = '/pt/index.xml'
+        weight = 4
 
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.
-  description = "Hugo + Bear = :heart:"
-
-  # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
-  # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.
-  favicon = "images/favicon.png"
+  description = "Bear Cub Demo"
 
   # These "images" are used for the structured data templates. This will show up, when
   # services like Twitter or Slack want to generate a preview of a link to your site.
   # See https://gohugo.io/templates/internal#twitter-cards and
   # https://gohugo.io/templates/internal#open-graph.
-  images = ["images/share.png"]
+  images = ["/images/share.png"]
 
   # Another "title" :-). This one is used as the site_name on the Hugo's internal
   # opengraph structured data template.
   # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-  title = "Hugo ʕ•ᴥ•ʔ Bear"
-
-  # This theme will, by default, inject a made-with-line at the bottom of the page.
-  # You can turn it off, but we would really appreciate if you don’t :-).
-  # hideMadeWithLine = true
+  title = "Example Site"
 
   # By default, this theme displays dates with a format like "02 Jan, 2006", but
   # you can customize it by setting the `dateFormat` param in your site's config
   # file. See [Hugo's Format function docs](https://gohugo.io/functions/format/)
   # for details. An example TOML config that uses [ISO
   # 8601](https://en.wikipedia.org/wiki/ISO_8601) format:
-  # dateFormat = "2006-01-02"
+  dateFormat = "2006-01-02"
+
+  # /!\ This is an experimental feature, might be removed or changed at any time
+  # (Optional, experimental, default false) Enables a drop-down menu for translations only if a translation is present.
+  hideUntranslated = false

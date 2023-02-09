@@ -1,4 +1,2 @@
-<a href="{{ i18n "home" | relURL }}" class="title">
-  <h2>{{ .Site.Title }}</h2>
-</a>
+<a href="{{ .Site.Language.Params.params.home }}" class="title"><h2>{{ .Site.Title }}</h2></a>
 <nav>{{- partial "nav.html" . -}}</nav>
