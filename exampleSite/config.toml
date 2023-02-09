@@ -30,7 +30,7 @@ DefaultContentLanguage = "en"
     weight = 1
     [languages.en.params]
       # You can use markdown here if you want to link somewhere
-      madeWith = "[Feito de pedra](/posts/sites-de-pedra)"
+      madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
   [languages.pt]
     title = "Site Exemplo"
     languageName = "Português 🇧🇷"
@@ -39,7 +39,7 @@ DefaultContentLanguage = "en"
     weight = 2
     [languages.pt.params]
       # You can use markdown here if you want to link somewhere
-      madeWith = "[Feito de pedra](/posts/sites-de-pedra)"
+      madeWith = "Feito com [Bear Cub](https://github.com/clente/hugo-bearcub)"
 
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.
