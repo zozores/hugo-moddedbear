@@ -6,8 +6,8 @@ baseURL = "https://example.com"
 theme = "hugo-bearcub"
 
 # Basic metadata configuration for your blog.
-author = "Caio Lente"
-copyright = "Caio Lente (CC BY-SA 4.0)"
+author = "John Doe"
+copyright = "John Doe (CC BY-SA 4.0)"
 
 # highlighting without inline styles
 [markup]
@@ -25,19 +25,21 @@ DefaultContentLanguage = "en"
   [languages.en]
     title = "Example Site"
     languageName = "English 🇺🇸"
+    LanguageCode = "en-US"
     contentDir = "content"
     weight = 1
     [languages.en.params]
       # You can use markdown here if you want to link somewhere
-      madeWith = '[Feito de pedra](/posts/sites-de-pedra)'
+      madeWith = "[Feito de pedra](/posts/sites-de-pedra)"
   [languages.pt]
     title = "Site Exemplo"
     languageName = "Português 🇧🇷"
+    LanguageCode = "pt-BR"
     contentDir = "content.pt"
     weight = 2
     [languages.pt.params]
       # You can use markdown here if you want to link somewhere
-      madeWith = '[Feito de pedra](/posts/sites-de-pedra)'
+      madeWith = "[Feito de pedra](/posts/sites-de-pedra)"
 
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.
@@ -66,4 +68,4 @@ DefaultContentLanguage = "en"
   hideUntranslated = false
 
   # Email
-  email = "c@lente.dev"
+  email = "me@example.com"

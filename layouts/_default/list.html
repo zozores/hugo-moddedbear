@@ -25,8 +25,7 @@
     </li>
     {{ end }}
   </ul>
-  {{ if .Data.Singular }}
-  {{else}}
+  {{ if not .Data.Singular }}
     <div>
       {{ range .Site.Taxonomies.tags }}
         <a class="blog-tags" href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>&nbsp;&nbsp;

@@ -1,7 +1,7 @@
 {{ range .Site.Menus.main.ByWeight }}
   <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
 {{ end }}
-<a href="mailto:{{ .Site.Params.email }}?subject={{ i18n "email-subject" }}'{{ .Page.Title | default .Site.Title }}'">Email</a>
+<a href='mailto:{{ .Site.Params.email }}?subject={{ i18n "email-subject" }}"{{ .Page.Title | default .Site.Title }}"'>Email</a>
 <a href="/index.xml">RSS</a>
 {{ $pageLang := .Page.Lang }}
 {{ if .IsTranslated }}
