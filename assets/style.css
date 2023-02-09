@@ -123,6 +123,10 @@ a.blog-tags {
   line-height: 2;
 }
 
+h3.blog-filter {
+  margin-bottom: 0;
+}
+
 .disabled {
   color: currentColor;
   cursor: not-allowed;
