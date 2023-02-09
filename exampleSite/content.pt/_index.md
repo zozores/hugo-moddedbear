@@ -1,3 +1,9 @@
+---
+title: "Início"
+menu: "main"
+weight: 1
+---
+
 # Um par divino
 
 There is a website obesity crisis. Bloated websites full of scripts, ads, and trackers are slowing your readers down every time they try to read your well-crafted content.

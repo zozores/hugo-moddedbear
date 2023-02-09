@@ -1,4 +1,4 @@
-{{ range .Site.Menus.main }}
+{{ range .Site.Menus.main.ByWeight }}
   <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
 {{ end }}
 <a href="mailto:{{ .Site.Params.email }}?subject={{ i18n "email-subject" }}'{{ .Page.Title | default .Site.Title }}'">Email</a>
