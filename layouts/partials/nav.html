@@ -1,6 +1,8 @@
 {{ range .Site.Menus.main }}
   <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
 {{ end }}
+<a href="mailto:{{ .Site.Params.email }}?subject={{ i18n "email-subject" }}'{{ .Page.Title | default .Site.Title }}'">Email</a>
+<a href="/index.xml">RSS</a>
 {{ $pageLang := .Page.Lang }}
 {{ if .IsTranslated }}
   {{ range .Translations }}
@@ -11,8 +13,3 @@
 {{ else if not .Site.Params.hideUntranslated }}
   <a class="disabled" href="">{{ .Language.LanguageName }}</a>
 {{ end }}
-
-<!-- <a href={{ i18n "home" | relURL }}>Home</a>
-<a href={{ i18n "posts" }}>Blog</a>
-<a href="mailto:c@lente.dev?subject={{ i18n "reply" }}'{{ .Page.Title | default .Site.Title }}'">Email</a>
-<a href="/index.xml">RSS</a> -->

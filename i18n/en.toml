@@ -1,2 +1,5 @@
 [filtering-for]
   other = 'Filtering for'
+
+[email-subject]
+  other = 'Reply to '

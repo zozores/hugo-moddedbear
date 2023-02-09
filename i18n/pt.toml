@@ -1,2 +1,5 @@
 [filtering-for]
   other = 'Filtrando para'
+
+[email-subject]
+  other = 'Resposta a '
