@@ -4,24 +4,31 @@ menu: "main"
 weight: 1
 ---
 
-# A match made in heaven
+# Say hello to Bear Cub!
 
-There is a website obesity crisis. Bloated websites full of scripts, ads, and trackers are slowing your readers down every time they try to read your well-crafted content.
+Today's websites are bloated, slow, and full of scripts, ads, and trackers. This
+became so commonplace that we lost all sense of perspective, to the point that
+we now think multi-megabyte webpages are normal.
 
-Hugo Bear Blog is all you need to build a fantastic and optimized site or blog. It works perfectly on **any** viewing device. All you need to focus on is writing good content.
+> The internet has become a bloated mess. Huge JavaScript libraries, countless
+> client-side queries and overly complex frontend frameworks are par for the
+> course these days.
+>
+> --- [Kev Quirk](https://512kb.club/)
 
-[Go to the original bear blog](https://bearblog.dev/).
+Let's change this one website at a time! **Bear Cub** is a
+[Hugo](https://gohugo.io/) theme based on [Hugo
+Bear](https://github.com/janraasch/hugo-bearblog/) that takes care of speed and
+optimization, so you can focus on writing good content.
 
----
+It is free, **multilingual**, optimized for search engines, no-nonsense,
+responsive, light, and fast. Really fast.
 
-What happens when you combine the worlds' fastest, most lightweight static site generator with a design theme built to provide you with free, no-nonsense, super-fast blogging capabilities?
+Additionally, when compared to its predecessor, Bear Cub was made with
+[privacy](https://themarkup.org/blacklight?url=lente.dev),
+[security](https://observatory.mozilla.org/analyze/lente.dev) and
+[accessibility](https://pagespeed.web.dev/report?url=https%3A%2F%2Flente.dev%2F)
+in mind. For more details on how to ensure your website keeps following these
+guidelines, [check out my blog](https://lente.dev/en/posts/stone-websites/).
 
-**Use this theme, and find out!**
-
-Made with 💟 by [Caio lente](https://lente.dev/en) based on [Hugo ʕ•ᴥ•ʔ Bear Blog](https://github.com/janraasch/hugo-bearblog).
-
----
-
-Simply publish content online, grow an audience, and keep your pages tiny, fast, and **optimized for search engines**.
-
-Each page is ~5kb, and you can **host your blog yourself**.
+Made with 💟 by [Caio lente](https://lente.dev/en).
