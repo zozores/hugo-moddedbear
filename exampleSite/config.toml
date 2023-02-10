@@ -14,6 +14,9 @@ copyright = "John Doe (CC BY 4.0)"
   [markup.highlight]
     lineNos = true
     lineNumbersInTable = false
+    # This allows Bear Cub to use a variation of Dracula that is more accessible
+    # to people with poor eyesight
+    # See https://web.dev/color-and-contrast-accessibility/
     noClasses = false
 
 # Multi-lingual mode config
