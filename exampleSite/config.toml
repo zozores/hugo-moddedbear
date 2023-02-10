@@ -9,6 +9,9 @@ theme = "hugo-bearcub"
 author = "John Doe"
 copyright = "John Doe (CC BY 4.0)"
 
+# Generate a nice robots.txt for SEO
+enableRobotsTXT = true
+
 # highlighting without inline styles
 [markup]
   [markup.highlight]
