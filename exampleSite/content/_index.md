@@ -18,7 +18,7 @@ What happens when you combine the worlds' fastest, most lightweight static site 
 
 **Use this theme, and find out!**
 
-Made with 💟 by [Jan Raasch](https://www.janraasch.com).
+Made with 💟 by [Caio lente](https://lente.dev/en) based on [Hugo ʕ•ᴥ•ʔ Bear Blog](https://github.com/janraasch/hugo-bearblog).
 
 ---
 

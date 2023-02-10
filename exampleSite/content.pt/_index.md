@@ -4,24 +4,24 @@ menu: "main"
 weight: 1
 ---
 
-# Um par divino
+# Um par perfeito
 
-There is a website obesity crisis. Bloated websites full of scripts, ads, and trackers are slowing your readers down every time they try to read your well-crafted content.
+Existe uma crise de obesidade de websites. Sites entulhados de scripts, propagandas e rastreadores estão fazendo os seus leitores perderem tempo toda vez que eles tentam ler o seu conteúdo.
 
-Hugo Bear Blog is all you need to build a fantastic and optimized site or blog. It works perfectly on **any** viewing device. All you need to focus on is writing good content.
+Hugo Bear Cub é tudo que você precisa para construir um site ou blog fantástico e otimizado. Ele funciona perfeitamente em **qualquer** aparelho. Tudo que você precisa fazer é focar em escrever um bom conteúdo.
 
-[Go to the original bear blog](https://bearblog.dev/).
-
----
-
-What happens when you combine the worlds' fastest, most lightweight static site generator with a design theme built to provide you with free, no-nonsense, super-fast blogging capabilities?
-
-**Use this theme, and find out!**
-
-Made with 💟 by [Jan Raasch](https://www.janraasch.com).
+[Vá para o bear blog original](https://bearblog.dev/).
 
 ---
 
-Simply publish content online, grow an audience, and keep your pages tiny, fast, and **optimized for search engines**.
+O que acontece quando você junta o gerador de sites estáticos mais rápido e leve do mundo com um tema gratuito, sensato e super rápido?
 
-Each page is ~5kb, and you can **host your blog yourself**.
+**Use este tema e descubra!**
+
+Feito com 💟 por [Caio lente](https://lente.dev) baseado no [Hugo ʕ•ᴥ•ʔ Bear Blog](https://github.com/janraasch/hugo-bearblog).
+
+---
+
+Simplesmente publique seu conteúdo online, amplie seu público e mantenha suas páginas pequenas, rápidas e **otimizadas para buscadores**.
+
+Cada página pesa ~5kb e você pode **hospedar o seu próprio blog**.
