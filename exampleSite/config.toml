@@ -7,7 +7,7 @@ theme = "hugo-bearcub"
 
 # Basic metadata configuration for your blog.
 author = "John Doe"
-copyright = "John Doe (CC BY-SA 4.0)"
+copyright = "John Doe (CC BY 4.0)"
 
 # highlighting without inline styles
 [markup]
@@ -29,6 +29,8 @@ DefaultContentLanguage = "en"
     contentDir = "content"
     weight = 1
     [languages.en.params]
+      # Absolute path to your blog section, used for the nav bar's RSS link
+      blogPath = "/blog"
       # You can use markdown here if you want to link somewhere
       madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
   [languages.pt]
@@ -38,6 +40,8 @@ DefaultContentLanguage = "en"
     contentDir = "content.pt"
     weight = 2
     [languages.pt.params]
+      # Absolute path to your blog section, used for the nav bar's RSS link
+      blogPath = "/pt/blog"
       # You can use markdown here if you want to link somewhere
       madeWith = "Feito com [Bear Cub](https://github.com/clente/hugo-bearcub)"
 
@@ -67,5 +71,5 @@ DefaultContentLanguage = "en"
   # (Optional, experimental, default false) Enables a drop-down menu for translations only if a translation is present.
   hideUntranslated = false
 
-  # Email
+  # Email, used for the nav bar's email link
   email = "me@example.com"

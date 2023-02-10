@@ -2,7 +2,7 @@
   <a href="{{ absLangURL .URL }}">{{ .Name }}</a>
 {{ end }}
 <a href='mailto:{{ .Site.Params.email }}?subject={{ i18n "email-subject" }}"{{ default .Site.Title .Page.Title }}"'>Email</a>
-<a href="/index.xml">RSS</a>
+<a href="{{ .Site.Language.Params.params.blogPath }}/index.xml">RSS</a>
 
 <!-- Convert this page's translations into a dict -->
 {{ $translations := dict }}
