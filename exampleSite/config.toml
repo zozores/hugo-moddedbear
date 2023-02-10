@@ -1,31 +1,26 @@
-# Base URL used when generating links to your pages
-# Set to the URL for your site
+# Basic config
 baseURL = "https://example.com"
-
-# The name of this wonderful theme ;-).
 theme = "hugo-bearcub"
-
-# Basic metadata configuration for your blog.
 author = "John Doe"
 copyright = "John Doe (CC BY 4.0)"
 
 # Generate a nice robots.txt for SEO
 enableRobotsTXT = true
 
-# highlighting without inline styles
+# Setup syntax highlighting without inline styles. For more information about
+# why you'd want to avoid inline styles, see
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src#unsafe_inline_styles
 [markup]
   [markup.highlight]
     lineNos = true
     lineNumbersInTable = false
     # This allows Bear Cub to use a variation of Dracula that is more accessible
-    # to people with poor eyesight
-    # See https://web.dev/color-and-contrast-accessibility/
+    # to people with poor eyesight. For more information about color contrast
+    # and accessibility, see https://web.dev/color-and-contrast-accessibility/
     noClasses = false
 
-# Multi-lingual mode config
-# There are different options to translate files
-# See https://gohugo.io/content-management/multilingual/#translation-by-filename
-# And https://gohugo.io/content-management/multilingual/#translation-by-content-directory
+# Multilingual mode config. More for information about how to setup translation,
+# see https://gohugo.io/content-management/multilingual/
 DefaultContentLanguage = "en"
 [languages]
   [languages.en]
@@ -33,53 +28,43 @@ DefaultContentLanguage = "en"
     languageName = "English 🇺🇸"
     LanguageCode = "en-US"
     contentDir = "content"
-    weight = 1
     [languages.en.params]
-      # Absolute path to your blog section, used for the nav bar's RSS link
-      blogPath = "/blog"
-      # You can use markdown here if you want to link somewhere
+      blogPath = "/blog" # Path to your blog section (used by RSS)
       madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
   [languages.pt]
     title = "Site Exemplo"
     languageName = "Português 🇧🇷"
     LanguageCode = "pt-BR"
     contentDir = "content.pt"
-    weight = 2
     [languages.pt.params]
-      # Absolute path to your blog section, used for the nav bar's RSS link
-      blogPath = "/pt/blog"
-      # You can use markdown here if you want to link somewhere
+      blogPath = "/pt/blog" # Path to your blog section (used by RSS)
       madeWith = "Feito com [Bear Cub](https://github.com/clente/hugo-bearcub)"
 
 [params]
-  # The "description" of your website. This is used in the meta data of your generated html.
+  # The description of your website
   description = "Bear Cub Demo"
 
-  # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
-  # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.
+  # The path to your favicon
   favicon = "images/favicon.png"
 
-  # These "images" are used for the structured data templates. This will show up, when
-  # services like Twitter or Slack want to generate a preview of a link to your site.
-  # See https://gohugo.io/templates/internal#twitter-cards and
-  # https://gohugo.io/templates/internal#open-graph.
+  # These images will show up when services want to generate a preview of a link
+  # to your site. For more information about previews, see
+  # https://gohugo.io/templates/internal#twitter-cards and
+  # https://gohugo.io/templates/internal#open-graph
   images = ["/images/share.png"]
 
-  # Another "title" :-). This one is used as the site_name on the Hugo's internal
-  # opengraph structured data template.
-  # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
+  # This title is used as the site_name on the Hugo's internal opengraph
+  # structured data template
   title = "Example Site"
 
-  # By default, this theme displays dates with a format like "02 Jan, 2006", but
-  # you can customize it by setting the `dateFormat` param in your site's config
-  # file. See [Hugo's Format function docs](https://gohugo.io/functions/format/)
-  # for details. An example TOML config that uses [ISO
-  # 8601](https://en.wikipedia.org/wiki/ISO_8601) format:
+  # Dates are displayed following the format below. For more information about
+  # formatting, see https://gohugo.io/functions/format/
   dateFormat = "2006-01-02"
 
-  # /!\ This is an experimental feature, might be removed or changed at any time
-  # (Optional, experimental, default false) Enables a drop-down menu for translations only if a translation is present.
+  # If your blog is multilingual but you haven't translated a page, this theme
+  # will create a disabled link. By setting `hideUntranslated` to true, you can
+  # have the theme simply not show any link
   hideUntranslated = false
 
-  # Email, used for the nav bar's email link
+  # Your email, added to the navbar so readers can reply to your posts
   email = "me@example.com"
