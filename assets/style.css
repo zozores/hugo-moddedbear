@@ -60,6 +60,15 @@ table {
   width: 100%;
 }
 
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+  border-color: #c9d1d9;
+  padding: 5px;
+}
+
 img {
   max-width: 100%;
 }
