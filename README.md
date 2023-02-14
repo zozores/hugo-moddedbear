@@ -141,16 +141,16 @@ enableRobotsTXT = true
 # see https://gohugo.io/content-management/multilingual/
 [languages]
   [languages.en]
-    title = "Example Site"
-    languageName = "English 🇺🇸"
+    title = "Bear Cub"
+    languageName = "en-US 🇺🇸"
     LanguageCode = "en-US"
     contentDir = "content"
     [languages.en.params]
       blogPath = "/blog" # Path to your blog section (used by RSS)
       madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
   [languages.pt]
-    title = "Site Exemplo"
-    languageName = "Português 🇧🇷"
+    title = "Bear Cub"
+    languageName = "pt-BR 🇧🇷"
     LanguageCode = "pt-BR"
     contentDir = "content.pt"
     [languages.pt.params]
@@ -168,11 +168,11 @@ enableRobotsTXT = true
   # to your site. For more information about previews, see
   # https://gohugo.io/templates/internal#twitter-cards and
   # https://gohugo.io/templates/internal#open-graph
-  images = ["/images/share.png"]
+  images = ["/images/share.webp"]
 
   # This title is used as the site_name on the Hugo's internal opengraph
   # structured data template
-  title = "Example Site"
+  title = "Bear Cub"
 
   # Dates are displayed following the format below. For more information about
   # formatting, see https://gohugo.io/functions/format/
