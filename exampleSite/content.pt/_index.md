@@ -16,7 +16,7 @@ que achamos normal uma página web ter vários megabytes.
 >
 > --- [Kev Quirk](https://512kb.club/)
 
-Vamos mudar isso um site de cada vez! **Bear Cub** é um tema
+Vamos mudar isso, um site de cada vez! **Bear Cub** é um tema
 [Hugo](https://gohugo.io/) baseado no [Hugo
 Bear](https://github.com/janraasch/hugo-bearblog/) que toma conta da velocidade
 e otimização para que você possa focar em escrever bons textos.
@@ -24,8 +24,7 @@ e otimização para que você possa focar em escrever bons textos.
 Ele é gratuito, multilíngue, otimizado para buscadores, simples, responsivo,
 leve e rápido. Muito rápido.
 
-Quando comparado ao seu predecessor, o **Bear Cub** também tem alguns upgrades
-de
+Quando comparado ao seu predecessor, o **Bear Cub** tem alguns upgrades de
 [privacidade](https://themarkup.org/blacklight?url=clente.github.io/hugo-bearcub/)
 e
 [acessibilidade](https://pagespeed.web.dev/report?url=https%3A%2F%2Fclente.github.io%2Fhugo-bearcub%2F).
