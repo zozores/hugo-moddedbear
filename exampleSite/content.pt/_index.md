@@ -4,7 +4,7 @@ menu: "main"
 weight: 1
 ---
 
-# Diga oi para o Bear Cub!
+# ᕦʕ •ᴥ•ʔᕤ Bear Cub
 
 Os sites de hoje em dia são pesados, lentos e cheios de scripts, propagandas e
 rastreadores. Isso ficou tão comum que nós perdemos toda a perspectiva, tanto
@@ -18,17 +18,19 @@ que achamos normal uma página web ter vários megabytes.
 
 Vamos mudar isso um site de cada vez! **Bear Cub** é um tema
 [Hugo](https://gohugo.io/) baseado no [Hugo
-Bear](https://github.com/janraasch/hugo-bearblog/) que tema conta da velocidade
+Bear](https://github.com/janraasch/hugo-bearblog/) que toma conta da velocidade
 e otimização para que você possa focar em escrever bons textos.
 
-Ele é gratuito, multilíngue, otimizado para buscadores, direto, responsivo, leve
-e rápido. Muito rápido.
+Ele é gratuito, multilíngue, otimizado para buscadores, simples, responsivo,
+leve e rápido. Muito rápido.
 
-Além disso, quando comparado ao seu predecessor, o Bear Cub foi feito com
-[privacidade](https://themarkup.org/blacklight?url=lente.dev),
-[segurança](https://observatory.mozilla.org/analyze/lente.dev) e
-[acessibilidade](https://pagespeed.web.dev/report?url=https%3A%2F%2Flente.dev%2F)
-em mente. Para garantir que o seu site continue seguindo esses princípios, dê
-uma [olhada no meu blog](https://lente.dev/posts/sites-de-pedra/).
+Quando comparado ao seu predecessor, o **Bear Cub** também tem alguns upgrades
+de
+[privacidade](https://themarkup.org/blacklight?url=clente.github.io/hugo-bearcub/)
+e
+[acessibilidade](https://pagespeed.web.dev/report?url=https%3A%2F%2Fclente.github.io%2Fhugo-bearcub%2F).
+Ele também é compatível com as práticas mais modernas de
+[segurança](https://github.com/clente/hugo-bearcub#secure) para que seus
+usuários possam aproveitar seu site sem medo.
 
 Feito com 💟 por [Caio lente](https://lente.dev).

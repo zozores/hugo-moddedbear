@@ -25,7 +25,7 @@ enableRobotsTXT = true
 [languages]
   [languages.en]
     title = "Example Site"
-    languageName = "English 🇺🇸"
+    languageName = "en-US 🇺🇸"
     LanguageCode = "en-US"
     contentDir = "content"
     [languages.en.params]
@@ -33,7 +33,7 @@ enableRobotsTXT = true
       madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
   [languages.pt]
     title = "Site Exemplo"
-    languageName = "Português 🇧🇷"
+    languageName = "pt-BR 🇧🇷"
     LanguageCode = "pt-BR"
     contentDir = "content.pt"
     [languages.pt.params]
