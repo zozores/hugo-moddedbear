@@ -75,6 +75,8 @@ img {
 
 code {
   padding: 2px 5px;
+  color: #f8f8f2;
+  background-color: #282a36;
 }
 
 pre code {
