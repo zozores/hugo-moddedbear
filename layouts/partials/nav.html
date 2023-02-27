@@ -17,7 +17,7 @@
   {{ else }}
     <!-- The complicated setup was necessary to make a grayed out link -->
     {{ if not .Params.hideUntranslated }}
-      <a class="disabled" href="">{{ .LanguageName }}</a>
+      <a class="disabled" role="link" aria-disabled="true">{{ .LanguageName }}</a>
     {{ end }}
   {{ end }}
 {{ end }}
