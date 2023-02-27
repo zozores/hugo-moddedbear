@@ -117,7 +117,7 @@ ul.blog-posts {
 
 ul.blog-posts li {
   display: flex;
-  line-height: 2.1;
+  margin-bottom: 10px;
 }
 
 ul.blog-posts li span {
