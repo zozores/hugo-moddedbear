@@ -61,10 +61,10 @@ enableRobotsTXT = true
   # formatting, see https://gohugo.io/functions/format/
   dateFormat = "2006-01-02"
 
-  # If your blog is multilingual but you haven't translated a page, this theme
-  # will create a disabled link. By setting `hideUntranslated` to true, you can
-  # have the theme simply not show any link
-  hideUntranslated = false
-
   # Your email, added to the navbar so readers can reply to your posts
   email = "me@example.com"
+
+  # (EXPERIMENTAL) If your blog is multilingual but you haven't translated a
+  # page, this theme will create a disabled link. By setting `hideUntranslated`
+  # to true, you can have the theme simply not show any link
+  hideUntranslated = false
