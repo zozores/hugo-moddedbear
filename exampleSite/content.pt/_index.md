@@ -1,7 +1,7 @@
 ---
 title: "Início"
 menu: "main"
-images: ["images/share.webp"]
+images: ["/hugo-bearcub/images/share.webp"]
 weight: 1
 ---
 
