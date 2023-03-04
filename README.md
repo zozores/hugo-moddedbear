@@ -123,12 +123,16 @@ of the [demo](https://clente.github.io/hugo-bearcub/) for more information.
 # Basic config
 baseURL = "https://example.com"
 theme = "hugo-bearcub"
-author = "John Doe"
 copyright = "John Doe (CC BY 4.0)"
 defaultContentLanguage = "en"
 
 # Generate a nice robots.txt for SEO
 enableRobotsTXT = true
+
+# Your name. For more information on why this must be a list, see
+# https://discourse.gohugo.io/t/site-author-usage/31459/8
+[author]
+  name = "John Doe"
 
 # Setup syntax highlighting without inline styles. For more information about
 # why you'd want to avoid inline styles, see
@@ -189,9 +193,9 @@ enableRobotsTXT = true
   hideUntranslated = false
 
   # (EXPERIMENTAL) This theme is capable of dynamically generating social cards
-  # for posts that don't have `images` defined in their front matter. By setting
+  # for posts that don't have `images` defined in their front matter; By setting
   # `generateSocialCard` to false, you can prevent this behavior. For more
-  # information about images, see https://gohugo.io/functions/images/
+  # information see layouts/partials/seo_tags.html
   generateSocialCard = true
 
   # Social media. Delete any item you aren't using to make sure it won't show up
