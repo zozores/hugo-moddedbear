@@ -1,7 +1,7 @@
 ---
 title: "Início"
 menu: "main"
-images: ["/images/share.webp"]
+images: ["images/share.webp"]
 weight: 1
 ---
 
