@@ -107,6 +107,11 @@ already implemented:
   writing the CSS you need in `assets/{custom_css}.css` and then including
   `style: "{custom_css}.css"` in the [front
   matter](https://gohugo.io/content-management/front-matter/) of said page.
+- Dynamic social card generation (EXPERIMENTAL): if you don't add preview images
+  to a post, this template will generate one based on the title. You can see an
+  example below.
+
+![Social card example](https://raw.githubusercontent.com/clente/hugo-bearcub/main/images/social_card.webp)
 
 ## Configuration
 
@@ -165,8 +170,8 @@ enableRobotsTXT = true
   favicon = "images/favicon.png"
 
   # These images will show up when services want to generate a preview of a link
-  # to your site. For more information about previews, see
-  # https://gohugo.io/templates/internal#twitter-cards and
+  # to your site. Ignored if `generateSocialCard = true`. For more information
+  # about previews, see https://gohugo.io/templates/internal#twitter-cards and
   # https://gohugo.io/templates/internal#open-graph
   images = ["/images/share.webp"]
 
@@ -183,8 +188,18 @@ enableRobotsTXT = true
   # have the theme simply not show any link
   hideUntranslated = false
 
-  # Your email, added to the navbar so readers can reply to your posts
-  email = "me@example.com"
+  # (EXPERIMENTAL) This theme is capable of dynamically generating social cards
+  # for posts that don't have `images` defined in their front matter. By setting
+  # `generateSocialCard` to false, you can prevent this behavior. For more
+  # information about images, see https://gohugo.io/functions/images/
+  generateSocialCard = true
+
+  # Social media. Delete any item you aren't using to make sure it won't show up
+  # in your website's metadata.
+  [social]
+    email = "me@example.com" # Added to the navbar so readers can reply to posts
+    twitter = "example" # Twitter handle (without '@')
+    facebook_admin = "0000000000" # Facebook Page Admin ID
 ```
 
 ## Contributing
