@@ -30,6 +30,10 @@ a {
   text-decoration: none;
   border: 0;
 }
+.title h1 {
+  font-size: 24px;
+  margin: 19.92px 0 19.92px 0;
+}
 
 .title span {
   font-weight: 400;
