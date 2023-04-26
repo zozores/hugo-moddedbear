@@ -1,20 +1,22 @@
 :root {
-  --color-dark: hsl(228, 15%, 11%); /* 1a1a1a */
+  font-size: 62.5%; /* 10px */
+  --color-dark: #181a20; /* 1a1a1a */
   --color-light: #fafafa;
   --color-primary: #1a8fe3;
-  --spacing: 1.5rem;
+  --size: 1rem;
+  --spacing: calc(var(--size) * 2.4);
 }
 
 body {
   background: var(--color-dark);
   color: var(--color-light);
-  padding: 2.5rem;
+  padding: 4rem;
   font-family: Avenir, 'Avenir Next LT Pro', Montserrat, Corbel, 'URW Gothic',
     source-sans-pro, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1.2rem;
-  line-height: 1.4;
-  min-height: 100vh;
+  font-size: calc(var(--size) * 1.8);
+  line-height: 1.5;
+  min-height: 80vh;
   max-width: 1600px;
   margin: 0 auto;
   word-wrap: break-word;
@@ -32,10 +34,10 @@ header {
 }
 
 nav a, a.blog-tags {
-  margin-right: calc(var(--spacing) / 3);
+  margin-right: calc(var(--spacing) / 2);
 }
 a.blog-tags {
-  line-height: 1.8;
+  line-height: 2;
 }
 
 main {
@@ -74,19 +76,19 @@ h5 {
 }
 
 h1 {
-  font-size: 3.55rem;
+  font-size: calc(var(--size) * 5.7);
 }
 h2 {
-  font-size: 2.66rem;
+  font-size: calc(var(--size) * 4.3);
 }
 h3 {
-  font-size: 2rem;
+  font-size: calc(var(--size) * 3.2);
 }
 h4 {
-  font-size: 1.5rem;
+  font-size: calc(var(--size) * 2.4);
 }
 h5 {
-  font-size: 1.13rem;
+  font-size: calc(var(--size) * 1.8);
 }
 
 ul,
@@ -101,6 +103,7 @@ blockquote {
   padding-inline-start: var(--spacing);
   border-inline-start: 0.2em solid;
   font-style: italic;
+  max-width: 50ch;
 }
 
 :is(h1, h2, h3, h4, h5, blockquote) {
@@ -113,15 +116,11 @@ blockquote {
   margin-block-start: calc(var(--spacing) * 2);
 }
 
-blockquote {
-  max-width: 50ch;
-}
-
 .title {
   text-decoration: none;
 }
 .title h1 {
-  font-size: 2rem;
+  font-size: calc(var(--size) * 3.2);
   margin-top: calc(var(--spacing) / 2);
 }
 
@@ -133,31 +132,25 @@ ul.blog-posts li {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 600px) {
-  ul.blog-posts li {
-    flex-direction: row;
-    gap: calc(var(--spacing) / 2);
-  }
-}
 ul.blog-posts li span {
   min-width: 11ch;
 }
+
 time {
   opacity: 0.5;
   font-style: normal;
 }
 
 code {
-  padding: 1px calc(var(--spacing) / 4);
-  color: #f8f8f2;
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro',
+    Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  padding: 2px calc(var(--spacing) / 4);
   background-color: #282a36;
-  font-size: 1rem;
+  font-size: calc(var(--size) * 1.4);
 }
-
 pre code {
   display: block;
-  padding: calc(var(--spacing) / 2);
-  white-space: pre-wrap;
+  padding: var(--spacing);
   overflow-x: auto;
 }
 
@@ -177,4 +170,17 @@ td {
   color: currentColor;
   cursor: not-allowed;
   opacity: 0.5;
+}
+
+@media screen and (min-width: 600px) {
+  ul.blog-posts li {
+    flex-direction: row;
+    gap: calc(var(--spacing) / 2);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --size: 0.9rem;
+  }
 }
