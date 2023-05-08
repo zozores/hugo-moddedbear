@@ -148,6 +148,8 @@ pre code {
   display: block;
   padding: var(--spacing);
   overflow-x: auto;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
 }
 
 table {
