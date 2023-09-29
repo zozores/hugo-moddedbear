@@ -103,6 +103,10 @@ already implemented:
 - Static content: you can create empty blog entries that act as links to static
   files by including `link: "{url}"` in a post's [front
   matter](https://gohugo.io/content-management/front-matter/).
+- Skip link: a "skip to main content" link that is temporarily invisible, but
+  can be focused by people who need a keyboard to navigate the web (see [PR
+  #5](https://github.com/clente/hugo-bearcub/pull/5) by
+  [@2kool4idkwhat](https://github.com/2kool4idkwhat) for more information).
 - Single-use CSS (EXPERIMENTAL): you can add some styles to a single page by
   writing the CSS you need in `assets/{custom_css}.css` and then including
   `style: "{custom_css}.css"` in the [front
