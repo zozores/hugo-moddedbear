@@ -159,7 +159,7 @@ enableRobotsTXT = true
     LanguageCode = "en-US"
     contentDir = "content"
     [languages.en.params]
-      blogPath = "/blog" # Path to your blog section (used by RSS)
+      blogPath = "blog" # Path to your blog section (used by RSS)
       madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
   [languages.pt]
     title = "Bear Cub"
@@ -167,7 +167,7 @@ enableRobotsTXT = true
     LanguageCode = "pt-BR"
     contentDir = "content.pt"
     [languages.pt.params]
-      blogPath = "/pt/blog" # Path to your blog section (used by RSS)
+      blogPath = "blog" # Path to your blog section (used by RSS)
       madeWith = "Feito com [Bear Cub](https://github.com/clente/hugo-bearcub)"
 
 [params]
