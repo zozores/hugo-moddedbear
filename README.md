@@ -100,6 +100,8 @@ Every once in a while, as I keep using **Bear Cub**, I notice that there is some
 functionality missing. Currently, these are the "advanced features" that I have
 already implemented:
 
+- Full-text RSS feed: an enhanced RSS feed template that includes the (properly
+  encoded) full content of your posts in the feed itself.
 - Static content: you can create empty blog entries that act as links to static
   files by including `link: "{url}"` in a post's [front
   matter](https://gohugo.io/content-management/front-matter/). You can also add
@@ -165,7 +167,6 @@ enableRobotsTXT = true
     LanguageCode = "en-US"
     contentDir = "content"
     [languages.en.params]
-      blogPath = "blog" # Path to your blog section (used by RSS)
       madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
   [languages.pt]
     title = "Bear Cub"
@@ -173,7 +174,6 @@ enableRobotsTXT = true
     LanguageCode = "pt-BR"
     contentDir = "content.pt"
     [languages.pt.params]
-      blogPath = "blog" # Path to your blog section (used by RSS)
       madeWith = "Feito com [Bear Cub](https://github.com/clente/hugo-bearcub)"
 
 [params]
