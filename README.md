@@ -100,6 +100,8 @@ Every once in a while, as I keep using **Bear Cub**, I notice that there is some
 functionality missing. Currently, these are the "advanced features" that I have
 already implemented:
 
+- Full-text RSS feed: an enhanced RSS feed template that includes the (properly
+  encoded) full content of your posts in the feed itself.
 - Static content: you can create empty blog entries that act as links to static
   files by including `link: "{url}"` in a post's [front
   matter](https://gohugo.io/content-management/front-matter/). You can also add
@@ -110,6 +112,9 @@ already implemented:
   can be focused by people who need a keyboard to navigate the web (see [PR
   #5](https://github.com/clente/hugo-bearcub/pull/5) by
   [@2kool4idkwhat](https://github.com/2kool4idkwhat) for more information).
+- Reply by email: if you supply an email address, the theme creates a "Reply to
+  this post by email" button at the end of every post (see Kev Quirk's [original
+  implementation](https://kevquirk.com/adding-the-post-title-to-my-reply-by-email-button)).
 - Single-use CSS (EXPERIMENTAL): you can add some styles to a single page by
   writing the CSS you need in `assets/{custom_css}.css` and then including
   `style: "{custom_css}.css"` in the [front
@@ -162,7 +167,6 @@ enableRobotsTXT = true
     LanguageCode = "en-US"
     contentDir = "content"
     [languages.en.params]
-      blogPath = "blog" # Path to your blog section (used by RSS)
       madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
   [languages.pt]
     title = "Bear Cub"
@@ -170,7 +174,6 @@ enableRobotsTXT = true
     LanguageCode = "pt-BR"
     contentDir = "content.pt"
     [languages.pt.params]
-      blogPath = "blog" # Path to your blog section (used by RSS)
       madeWith = "Feito com [Bear Cub](https://github.com/clente/hugo-bearcub)"
 
 [params]
@@ -208,7 +211,7 @@ enableRobotsTXT = true
   # Social media. Delete any item you aren't using to make sure it won't show up
   # in your website's metadata.
   [social]
-    email = "me@example.com" # Added to the navbar so readers can reply to posts
+    email = "me@example.com" # Added to the footer so readers can reply to posts
     twitter = "example" # Twitter handle (without '@')
     facebook_admin = "0000000000" # Facebook Page Admin ID
 ```
