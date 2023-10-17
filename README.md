@@ -102,7 +102,10 @@ already implemented:
 
 - Static content: you can create empty blog entries that act as links to static
   files by including `link: "{url}"` in a post's [front
-  matter](https://gohugo.io/content-management/front-matter/).
+  matter](https://gohugo.io/content-management/front-matter/). You can also add
+  `render: false` to your [build
+  options](https://gohugo.io/content-management/build-options/#readout) to avoid
+  rendering a blank post.
 - Skip link: a "skip to main content" link that is temporarily invisible, but
   can be focused by people who need a keyboard to navigate the web (see [PR
   #5](https://github.com/clente/hugo-bearcub/pull/5) by
