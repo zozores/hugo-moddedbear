@@ -6,6 +6,7 @@
     <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
       {{ .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}
     </time>
+    {{ with .Params.author }}· {{.}}{{ end }}
   </i>
 </p>
 {{ end }}
