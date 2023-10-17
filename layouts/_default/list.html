@@ -14,7 +14,7 @@
         </i>
       </span>
       {{ if .Params.link }}
-        <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a>
+        <a href="{{ .Params.link }}" target="_blank">{{ .Title }} ↪</a>
       {{ else }}
         <a href="{{ .Permalink }}">{{ .Title }}</a>
       {{ end }}
