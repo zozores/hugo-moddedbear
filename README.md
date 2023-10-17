@@ -102,7 +102,10 @@ already implemented:
 
 - Static content: you can create empty blog entries that act as links to static
   files by including `link: "{url}"` in a post's [front
-  matter](https://gohugo.io/content-management/front-matter/).
+  matter](https://gohugo.io/content-management/front-matter/). You can also add
+  `render: false` to your [build
+  options](https://gohugo.io/content-management/build-options/#readout) to avoid
+  rendering a blank post.
 - Single-use CSS (EXPERIMENTAL): you can add some styles to a single page by
   writing the CSS you need in `assets/{custom_css}.css` and then including
   `style: "{custom_css}.css"` in the [front
