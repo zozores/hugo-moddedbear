@@ -106,6 +106,10 @@ already implemented:
   `render: false` to your [build
   options](https://gohugo.io/content-management/build-options/#readout) to avoid
   rendering a blank post.
+- Skip link: a "skip to main content" link that is temporarily invisible, but
+  can be focused by people who need a keyboard to navigate the web (see [PR
+  #5](https://github.com/clente/hugo-bearcub/pull/5) by
+  [@2kool4idkwhat](https://github.com/2kool4idkwhat) for more information).
 - Single-use CSS (EXPERIMENTAL): you can add some styles to a single page by
   writing the CSS you need in `assets/{custom_css}.css` and then including
   `style: "{custom_css}.css"` in the [front
@@ -158,7 +162,7 @@ enableRobotsTXT = true
     LanguageCode = "en-US"
     contentDir = "content"
     [languages.en.params]
-      blogPath = "/blog" # Path to your blog section (used by RSS)
+      blogPath = "blog" # Path to your blog section (used by RSS)
       madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
   [languages.pt]
     title = "Bear Cub"
@@ -166,7 +170,7 @@ enableRobotsTXT = true
     LanguageCode = "pt-BR"
     contentDir = "content.pt"
     [languages.pt.params]
-      blogPath = "/pt/blog" # Path to your blog section (used by RSS)
+      blogPath = "blog" # Path to your blog section (used by RSS)
       madeWith = "Feito com [Bear Cub](https://github.com/clente/hugo-bearcub)"
 
 [params]

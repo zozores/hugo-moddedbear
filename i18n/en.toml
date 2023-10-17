@@ -6,3 +6,6 @@
 
 [email-subject]
   other = "Reply to "
+
+[skip-link]
+  other = "Skip to main content"

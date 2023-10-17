@@ -1,5 +1,5 @@
 {{ range .Site.Menus.main.ByWeight }}
-  <a href="{{ relLangURL .URL }}">{{ .Name }}</a>
+  <a href="{{ .URL }}">{{ .Name }}</a>
 {{ end }}
 {{ with .Site.Social.email }}
 <a href='mailto:{{ . }}?subject={{ i18n "email-subject" }}"{{ default $.Site.Title $.Page.Title }}"'>Email</a>

@@ -176,3 +176,17 @@ td {
     gap: calc(var(--spacing) / 2);
   }
 }
+
+/* "Skip to main content" link */
+.skip-link {
+  position: absolute;
+  top: 5;
+  transform: translateY(-600%);
+  transition: transform 0.5s;
+  background-color: #181a20;
+  padding: 6px;
+}
+
+.skip-link:focus {
+  transform: translateY(0%);
+}
