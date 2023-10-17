@@ -110,6 +110,9 @@ already implemented:
   can be focused by people who need a keyboard to navigate the web (see [PR
   #5](https://github.com/clente/hugo-bearcub/pull/5) by
   [@2kool4idkwhat](https://github.com/2kool4idkwhat) for more information).
+- Reply by email: if you supply an email address, the theme creates a "Reply to
+  this post by email" button at the end of every post (see Kev Quirk's [original
+  implementation](https://kevquirk.com/adding-the-post-title-to-my-reply-by-email-button)).
 - Single-use CSS (EXPERIMENTAL): you can add some styles to a single page by
   writing the CSS you need in `assets/{custom_css}.css` and then including
   `style: "{custom_css}.css"` in the [front
@@ -208,7 +211,7 @@ enableRobotsTXT = true
   # Social media. Delete any item you aren't using to make sure it won't show up
   # in your website's metadata.
   [social]
-    email = "me@example.com" # Added to the navbar so readers can reply to posts
+    email = "me@example.com" # Added to the footer so readers can reply to posts
     twitter = "example" # Twitter handle (without '@')
     facebook_admin = "0000000000" # Facebook Page Admin ID
 ```

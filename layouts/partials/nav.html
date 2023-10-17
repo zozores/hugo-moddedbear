@@ -1,9 +1,6 @@
 {{ range .Site.Menus.main.ByWeight }}
   <a href="{{ .URL }}">{{ .Name }}</a>
 {{ end }}
-{{ with .Site.Social.email }}
-<a href='mailto:{{ . }}?subject={{ i18n "email-subject" }}"{{ default $.Site.Title $.Page.Title }}"'>Email</a>
-{{ end }}
 <a href="{{ relLangURL .Site.Params.blogPath }}/index.xml">RSS</a>
 
 <!-- Convert this page's translations into a dict -->
