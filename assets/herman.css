@@ -132,9 +132,8 @@ ul.blog-posts li span {
   min-width: 11ch;
 }
 
-time {
+p.byline {
   opacity: 0.5;
-  font-style: normal;
 }
 
 code {
