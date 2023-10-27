@@ -119,6 +119,10 @@ already implemented:
   writing the CSS you need in `assets/{custom_css}.css` and then including
   `style: "{custom_css}.css"` in the [front
   matter](https://gohugo.io/content-management/front-matter/) of said page.
+- Conditional CSS (EXPERIMENTAL): since **Bear Cub** does syntax highlighting
+  without inline styles (see `config.toml` for more information), it only load
+  its `syntax.css` if, and only if, a code block is actually present in the
+  current page.
 - Dynamic social card generation (EXPERIMENTAL): if you don't add preview images
   to a post, this template will generate one based on the title. You can see an
   example below.
