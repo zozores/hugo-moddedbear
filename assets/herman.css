@@ -189,3 +189,14 @@ td {
 .skip-link:focus {
   transform: translateY(0%);
 }
+
+figure {
+  margin-inline-start: 0em;
+  margin-inline-end: 0em;
+}
+
+figcaption > p {
+  margin-block-start: 9px;
+  text-align: center;
+  font-style: italic;
+}
