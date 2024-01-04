@@ -214,7 +214,7 @@ enableRobotsTXT = true
 
   # Social media. Delete any item you aren't using to make sure it won't show up
   # in your website's metadata.
-  [social]
+  [params.social]
     email = "me@example.com" # Added to the footer so readers can reply to posts
     twitter = "example" # Twitter handle (without '@')
     facebook_admin = "0000000000" # Facebook Page Admin ID
