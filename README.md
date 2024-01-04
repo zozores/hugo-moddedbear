@@ -107,7 +107,7 @@ already implemented:
   matter](https://gohugo.io/content-management/front-matter/). You can also add
   `render: false` to your [build
   options](https://gohugo.io/content-management/build-options/#readout) to avoid
-  rendering a blank post.
+  rendering blank posts.
 - Skip link: a "skip to main content" link that is temporarily invisible, but
   can be focused by people who need a keyboard to navigate the web (see [PR
   #5](https://github.com/clente/hugo-bearcub/pull/5) by
@@ -144,11 +144,6 @@ defaultContentLanguage = "en"
 
 # Generate a nice robots.txt for SEO
 enableRobotsTXT = true
-
-# Your name. For more information on why this must be a list, see
-# https://discourse.gohugo.io/t/site-author-usage/31459/8
-[author]
-  name = "John Doe"
 
 # Setup syntax highlighting without inline styles. For more information about
 # why you'd want to avoid inline styles, see
@@ -214,10 +209,15 @@ enableRobotsTXT = true
 
   # Social media. Delete any item you aren't using to make sure it won't show up
   # in your website's metadata.
-  [social]
-    email = "me@example.com" # Added to the footer so readers can reply to posts
+  [params.social]
     twitter = "example" # Twitter handle (without '@')
     facebook_admin = "0000000000" # Facebook Page Admin ID
+
+  # Author metadata. This is mostly used for the RSS feed of your site, but the
+  # email is also added to the footer of each post
+  [params.author]
+    name = "John Doe" # Your name as shown in the RSS feed metadata
+    email = "me@example.com" # Added to the footer so readers can reply to posts
 ```
 
 ## Contributing
