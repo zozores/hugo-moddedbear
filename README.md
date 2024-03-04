@@ -125,6 +125,11 @@ already implemented:
   without inline styles (see `hugo.toml` for more information), it only load its
   `syntax.css` if, and only if, a code block is actually present in the current
   page.
+- Alternative "Herman" style (EXPERIMENTAL): if you want to check out a more
+  modern CSS style, you can change the `themeStyle` parameter to `"herman"` in
+  order to activate [Herman Martinus's](https://herman.bearblog.dev/) version of
+  the [Blogster Minimal](https://blogster-minimal.netlify.app/) theme for
+  [Astro](https://astro.build/).
 - Dynamic social card generation (EXPERIMENTAL): if you don't add preview images
   to a post, this template will generate one based on the title. You can see an
   example below.
@@ -202,6 +207,12 @@ enableRobotsTXT = true
   # will create a disabled link. By setting `hideUntranslated` to true, you can
   # have the theme simply not show any link
   hideUntranslated = false
+
+  # (EXPERIMENTAL) This theme has two options for its CSS styles: "original" and
+  # "herman". The former is what you see on Bear Cub's demo (an optimized
+  # version of Hugo Bear Blog), while the latter has a more modern look based on
+  # Herman Martinus's version of the Blogster Minimal theme for Astro.
+  themeStyle = "original"
 
   # (EXPERIMENTAL) This theme is capable of dynamically generating social cards
   # for posts that don't have `images` defined in their front matter; By setting
