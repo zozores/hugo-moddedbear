@@ -13,7 +13,7 @@
 </content>
 <p>
   {{ range (.GetTerms "tags") }}
-    <a class="blog-tags" href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+    <a class="blog-tags" href="{{ .Permalink }}">#{{ lower .LinkTitle }}</a>
   {{ end }}
 </p>
 {{ with .Site.Params.author.email }}
