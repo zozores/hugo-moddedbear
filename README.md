@@ -26,7 +26,7 @@ git submodule add https://github.com/clente/hugo-bearcub themes/hugo-bearcub
 To finish off, append a line to the site configuration file:
 
 ```sh
-echo 'theme = "hugo-bearcub"' >> config.toml
+echo 'theme = "hugo-bearcub"' >> hugo.toml
 ```
 
 ## Features
@@ -85,8 +85,8 @@ have to think about it again. My `_headers` file, for example, looks like this:
 ### Multilingual
 
 If you need to write a blog that supports more than one language, **Bear Cub**
-has you covered! Check out the demo's [`config.toml`
-file](https://github.com/clente/hugo-bearcub/blob/main/exampleSite/config.toml)
+has you covered! Check out the demo's [`hugo.toml`
+file](https://github.com/clente/hugo-bearcub/blob/main/exampleSite/hugo.toml)
 for a sample of how you can setup multilingual support.
 
 By default, the theme creates a translation button that gets disabled when the
@@ -120,9 +120,9 @@ already implemented:
   `style: "{custom_css}.css"` in the [front
   matter](https://gohugo.io/content-management/front-matter/) of said page.
 - Conditional CSS (EXPERIMENTAL): since **Bear Cub** does syntax highlighting
-  without inline styles (see `config.toml` for more information), it only load
-  its `syntax.css` if, and only if, a code block is actually present in the
-  current page.
+  without inline styles (see `hugo.toml` for more information), it only load its
+  `syntax.css` if, and only if, a code block is actually present in the current
+  page.
 - Dynamic social card generation (EXPERIMENTAL): if you don't add preview images
   to a post, this template will generate one based on the title. You can see an
   example below.
@@ -131,8 +131,8 @@ already implemented:
 
 ## Configuration
 
-**Bear Cub** can be customized with a `config.toml` file. Check out the
-[configuration](https://github.com/clente/hugo-bearcub/blob/main/exampleSite/config.toml)
+**Bear Cub** can be customized with a `hugo.toml` file. Check out the
+[configuration](https://github.com/clente/hugo-bearcub/blob/main/exampleSite/hugo.toml)
 of the [demo](https://clente.github.io/hugo-bearcub/) for more information.
 
 ```toml
