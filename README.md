@@ -115,6 +115,10 @@ already implemented:
 - Reply by email: if you supply an email address, the theme creates a "Reply to
   this post by email" button at the end of every post (see Kev Quirk's [original
   implementation](https://kevquirk.com/adding-the-post-title-to-my-reply-by-email-button)).
+  This button can be suppressed on a case-by-case by setting `hideReply: true`
+  in a post's [front matter](https://gohugo.io/content-management/front-matter/)
+  (see [PR #18](https://github.com/clente/hugo-bearcub/pull/18) by
+  [@chrsmutti](https://github.com/chrsmutti)).
 - `absfigure` shortcode: a shortcut to use the `figure` shortcode that also
   converts relative URLs into absolute URLs by using the `absURL` function.
 - Single-use CSS (EXPERIMENTAL): you can add some styles to a single page by
