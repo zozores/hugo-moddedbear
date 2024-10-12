@@ -11,7 +11,9 @@
   {{- partial "seo_tags.html" . -}}
   <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  {{ $style := print (default "original" .Site.Params.themeStyle) ".css" | resources.Get | minify }}
+  {{ $properties := resources.Get "properties.css" | minify }}
+  {{ $theme := print (default "original" .Site.Params.themeStyle) ".css" | resources.Get | minify }}
+  {{ $style := slice $properties $theme | resources.Concat "style.min.css" }}
   <link href="{{ $style.RelPermalink }}" rel="stylesheet">
 
   {{ if (.Page.Store.Get "hasCodeBlock") }}
@@ -28,6 +30,8 @@
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
 
+  {{- partial "social_tags.html" . -}}
+
   <!-- A partial to be overwritten by the user.
   Simply place a custom_head.html into
   your local /layouts/partials-directory -->
@@ -41,9 +45,11 @@
   <main id="main-content">
     {{- block "main" . }}{{- end }}
   </main>
-  <footer>
-    {{- partial "footer.html" . -}}
-  </footer>
+  {{ if not .Site.Params.hideFooter }}
+    <footer>
+      {{- partial "footer.html" . -}}
+    </footer>
+  {{ end }}
 
   <!-- A partial to be overwritten by the user.
   Simply place a custom_body.html into

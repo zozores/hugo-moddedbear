@@ -1,0 +1,31 @@
+/* To modify your theme, copy this file into your site /assets directory and edit there */
+
+:root {
+  /* Background colors */
+  --color-bg: #fafafa;
+  /* Primary colors (ex. text color) */
+  --color-primary: #242424;
+  /* Secondary colors (ex. code background, inputs) */
+  --color-secondary: #e6e6e6;
+  /* Primary accents (ex. links) */
+  --color-accent-1: #3584E4;
+  /* Secondary accent (ex. visited links) */
+  --color-accent-2: #8b6fcb;
+
+  --font-family: Seravek, 'Gill Sans Nova', Cantarell, Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Background colors */
+    --color-bg: #242424;
+    /* Primary colors (ex. text color) */
+    --color-primary: #fafafa;
+    /* Secondary colors (ex. code background, inputs) */
+    --color-secondary: #3a3a3a;
+    /* Primary accents (ex. links) */
+    --color-accent-1: #3584E4;
+    /* Secondary accent (ex. visited links) */
+    --color-accent-2: #8b6fcb;
+  }
+}

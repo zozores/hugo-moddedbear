@@ -1,0 +1,6 @@
+{{ if .Site.Params.social.fediverse }}
+    <link rel="me" href="{{ .Site.Params.social.fediverse }}">
+{{ end }}
+{{ if .Site.Params.author.fediverse }}
+    <meta name="fediverse:creator" content="{{ .Site.Params.author.fediverse }}" />
+{{ end }}

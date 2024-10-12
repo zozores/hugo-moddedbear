@@ -1,19 +1,14 @@
 :root {
   font-size: 62.5%; /* 10px */
-  --color-dark: #181a20;
-  --color-light: #fafafa;
-  --color-primary: #1a8fe3;
   --size: 1rem;
   --spacing: calc(var(--size) * 2.4);
 }
 
 body {
-  background: var(--color-dark);
-  color: var(--color-light);
+  background: var(--color-bg);
+  color: var(--color-primary);
   padding: 4rem;
-  font-family: Avenir, 'Avenir Next LT Pro', Montserrat, Corbel, 'URW Gothic',
-    source-sans-pro, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-family);
   font-size: calc(var(--size) * 1.8);
   line-height: 1.5;
   min-height: 80vh;
@@ -51,13 +46,22 @@ footer {
 
 a {
   color: currentColor;
-  text-decoration-color: var(--color-primary);
+  text-decoration-color: var(--color-accent-1);
   text-decoration-thickness: 0.3ex;
   text-underline-offset: 0.3ex;
 }
 
+ul.blog-posts li a:visited {
+  text-decoration-color: var(--color-accent-2);
+}
+
 a:hover {
-  text-decoration-thickness: 0.4ex;
+  text-decoration-thickness: 0.5ex;
+}
+
+:is(h1, h2, h3, h4, h5, h6) > a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 img {
@@ -140,13 +144,14 @@ code {
   font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro',
     Menlo, Consolas, 'DejaVu Sans Mono', monospace;
   padding: 2px calc(var(--spacing) / 4);
-  background-color: #282a36;
+  background-color: var(--color-secondary);
   font-size: calc(var(--size) * 1.4);
 }
 pre code {
   display: block;
   padding: var(--spacing);
   overflow-x: auto;
+  border-radius: 5px;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
 }
@@ -159,7 +164,7 @@ th,
 td {
   border: 1px solid;
   border-collapse: collapse;
-  border-color: var(--color-light);
+  border-color: var(--color-primary);
   padding: calc(var(--spacing) / 2);
 }
 
@@ -182,7 +187,7 @@ td {
   top: 5;
   transform: translateY(-600%);
   transition: transform 0.5s;
-  background-color: #181a20;
+  background-color: var(--color-secondary);
   padding: 6px;
 }
 
@@ -199,4 +204,25 @@ figcaption > p {
   margin-block-start: 9px;
   text-align: center;
   font-style: italic;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar-container {
+  align-self: center;
+  margin: 20px;
+}
+
+.avatar-image {
+  border-radius: 100%;
+  max-width: 200px;
+}
+
+@media (max-width: 500px) {
+  .row {
+    flex-direction: column;
+  }
 }

@@ -3,11 +3,25 @@
 <h1>{{ .Title }}</h1>
 <p class="byline">
   <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
-    {{ .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}
+    {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
   </time>
   {{ with .Params.author }}· {{.}}{{ end }}
+  {{ if not (.Lastmod.Equal .Date) }}
+    <br>
+    <time datetime='{{ .Lastmod.Format "2006-01-02" }}'>
+      ({{ i18n "updated" }} {{ .Lastmod.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }})
+    </time>
+  {{ end }}
 </p>
 {{ end }}
+
+{{ if .Params.contents }}
+<hr>
+<h3>{{ i18n "table-of-contents" }}</h3>
+{{ .TableOfContents }}
+<hr>
+{{ end }}
+
 <content>
   {{ .Content }}
 </content>
@@ -16,13 +30,18 @@
     <a class="blog-tags" href="{{ .RelPermalink }}">#{{ lower .LinkTitle }}</a>
   {{ end }}
 </p>
-{{ if not .Params.hideReply }}
-{{ with .Site.Params.author.email }}
+{{ with .Site.Params.blog.contactPage }}
   <p>
-    <a href='mailto:{{ . }}?subject={{ i18n "email-subject" }}"{{ default $.Site.Title $.Page.Title }}"'>
-      {{ i18n "email-reply" }} ↪
+    <a href='{{ . }}'>
+      ↪ {{ i18n "reply" }}
     </a>
   </p>
 {{ end }}
+{{ with .Params.comments }}
+  <p>
+    <a href='{{ . }}'>
+      ↪ {{ i18n "comment" }}
+    </a>
+  </p>
 {{ end }}
 {{ end }}

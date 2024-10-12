@@ -2,30 +2,26 @@
 <content>
   {{ if .Data.Singular }}
     <h3 class="blog-filter">{{ i18n "filtering-for" }} "{{ .Title }}"</h3>
+    <small>
+      <a href="{{ "/blog" | relURL }}">Remove filter</a> | <a href="index.xml">RSS</a>
+    </small>
+  {{ else if .Site.Params.list.tagsOnTop }}
+    <div>
+      {{ range .Site.Taxonomies.tags }}
+        <a class="blog-tags" href="{{ .Page.RelPermalink }}">#{{ lower .Page.Title }}</a>
+      {{ end }}
+    </div>
   {{ end }}
   <ul class="blog-posts">
     {{ range .Pages }}
-    <li>
-      <span>
-        <i>
-          <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
-            {{ .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}
-          </time>
-        </i>
-      </span>
-      {{ if .Params.link }}
-        <a href="{{ .Params.link }}" target="_blank">{{ .Title }} ↪</a>
-      {{ else }}
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      {{ end }}
-    </li>
+      {{- partial "post_list_item.html" . -}}
     {{ else }}
     <li>
       {{ i18n "no-posts" }}
     </li>
     {{ end }}
   </ul>
-  {{ if not .Data.Singular }}
+  {{ if not (and .Data.Singular .Site.Params.list.tagsOnTop) }}
     <div>
       {{ range .Site.Taxonomies.tags }}
         <a class="blog-tags" href="{{ .Page.RelPermalink }}">#{{ lower .Page.Title }}</a>

@@ -4,11 +4,23 @@
 [no-posts]
   other = "No posts yet"
 
-[email-subject]
-  other = "Reply to "
+[reply]
+  other = "Reply"
 
-[email-reply]
-  other = "Reply to this post by email"
+[comment]
+  other = "Comment"
 
 [skip-link]
   other = "Skip to main content"
+
+[recent-posts]
+  other = "Recent posts"
+
+[featured-posts]
+  other = "Featured posts"
+
+[updated]
+  other = "Updated"
+
+[table-of-contents]
+  other = "In this post..."

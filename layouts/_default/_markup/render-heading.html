@@ -1,0 +1,9 @@
+{{ if eq .Page.Type "blog" }}
+<h{{ .Level }} id="{{ .Anchor | safeURL }}"> <a href="#{{ .Anchor | safeURL }}">
+    {{ .Text | safeHTML }}
+</a> </h{{ .Level }}>
+{{ else }}
+<h{{ .Level }} id="{{ .Anchor | safeURL }}">
+    {{ .Text | safeHTML }}
+</h{{ .Level }}>
+{{ end }}

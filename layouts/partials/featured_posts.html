@@ -1,0 +1,10 @@
+<h2>{{ i18n "featured-posts" }}</h2>
+<ul class="blog-posts">
+    {{ range (where (where .Site.RegularPages "Type" "blog") ".Params.featured" true) }}
+        {{ partial "post_list_item.html" . }}
+    {{ else }}
+    <li>
+        {{ i18n "no-posts" }}
+    </li>
+    {{ end }}
+</ul>
