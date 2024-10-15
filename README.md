@@ -34,6 +34,8 @@ Features from the [Bear Cub theme](https://github.com/clente/hugo-bearcub) have 
   - Add a link on your frontmatter to somewhere where people can leave a public comment, like a Mastodon or other social media post
 - Anchor links on headings in posts
 - RSS feeds for each tag (these were already being generated but are now linked to when filtering by tag)
+- Custom home footer
+  - Useful for webrings or similar
 
 ### Changes
 - Tweaked generated social card colors
