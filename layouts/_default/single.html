@@ -30,12 +30,14 @@
     <a class="blog-tags" href="{{ .RelPermalink }}">#{{ lower .LinkTitle }}</a>
   {{ end }}
 </p>
-{{ with .Site.Params.blog.contactPage }}
-  <p>
-    <a href='{{ . }}'>
-      ↪ {{ i18n "reply" }}
-    </a>
-  </p>
+{{ if eq .Type "blog" }}
+  {{ with .Site.Params.blog.contactPage }}
+    <p>
+      <a href='{{ . }}'>
+        ↪ {{ i18n "reply" }}
+      </a>
+    </p>
+    {{ end }}
 {{ end }}
 {{ with .Params.comments }}
   <p>
