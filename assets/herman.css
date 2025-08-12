@@ -215,7 +215,7 @@ figcaption > p {
 
 .avatar-container {
   align-self: center;
-  margin: 20px;
+  margin: 0 20px;
 }
 
 .avatar-image {
@@ -223,7 +223,7 @@ figcaption > p {
   max-width: 200px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .row {
     flex-direction: column;
   }
