@@ -12,7 +12,7 @@
   /* Secondary accent (ex. visited links) */
   --color-accent-2: #8b6fcb;
 
-  --font-family: Seravek, 'Gill Sans Nova', Cantarell, Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+  --font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
