@@ -140,6 +140,8 @@ ul.blog-posts li span {
 
 p.byline {
   opacity: 0.5;
+  text-transform: uppercase;
+  font-style: italic;
 }
 
 code {
