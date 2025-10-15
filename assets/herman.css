@@ -160,6 +160,13 @@ pre code {
   -moz-text-size-adjust: 100%;
 }
 
+.toc {
+  display: flow-root;
+  background-color: var(--color-secondary);
+  padding: 0 var(--spacing);
+  border-radius: 5px;
+}
+
 table {
   width: 100%;
 }

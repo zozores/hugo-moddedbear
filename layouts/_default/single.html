@@ -16,10 +16,10 @@
 {{ end }}
 
 {{ if .Params.contents }}
-<hr>
-<h3>{{ i18n "table-of-contents" }}</h3>
-{{ .TableOfContents }}
-<hr>
+<div class="toc">
+  <h3>{{ i18n "table-of-contents" }}</h3>
+  {{ .TableOfContents }}
+</div>
 {{ end }}
 
 <content>
