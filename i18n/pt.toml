@@ -1,14 +1,26 @@
 [filtering-for]
-  other = "Filtrando para"
+  other = "Filtrando por"
 
 [no-posts]
-  other = "Nenhum post ainda"
+  other = "Sem postagens ainda"
 
-[email-subject]
-  other = "Resposta a "
+[reply]
+  other = "Responder"
 
-[email-reply]
-  other = "Responda a este post por email"
+[comment]
+  other = "Comentar"
 
 [skip-link]
-  other = "Pular para conteúdo principal"
+  other = "Pular para o conteúdo principal"
+
+[recent-posts]
+  other = "Recentes"
+
+[featured-posts]
+  other = "Destaque"
+
+[updated]
+  other = "Atualizado"
+
+[table-of-contents]
+  other = "Neste post..."
