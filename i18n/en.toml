@@ -14,10 +14,10 @@
   other = "Skip to main content"
 
 [recent-posts]
-  other = "Recent posts"
+  other = "Recent"
 
 [featured-posts]
-  other = "Featured posts"
+  other = "Featured"
 
 [updated]
   other = "Updated"
