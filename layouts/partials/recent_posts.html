@@ -1,6 +1,6 @@
 <h2>{{ i18n "recent-posts" }}</h2>
 <ul class="blog-posts">
-    {{ range first (default 5 .Site.Params.home.numRecent) (where .Site.RegularPages "Type" "blog") }}
+    {{ range first (default 5 .Site.Params.home.numRecent) (where .Site.RegularPages "Type" "in" (slice "blog" "micro")) }}
         {{ partial "post_list_item.html" . }}
     {{ else }}
     <li>
